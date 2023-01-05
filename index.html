@@ -2,16 +2,22 @@
 <html lang="pt-br">
 
 <head>
-  <title>S! DES!GNS</title>
+  <title>S! DESIGNS</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./assets/imgs/Prancheta_1.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link href="./src/style.css" rel="stylesheet" />
 </head>
 
 <body>
-  <div class="menu-btn" draggable="false">
-    <img src="./assets/imgs/menu.png" draggable="false">
+  <div class="menu-btn" id="menu-btn" draggable="false">
+    <div class="menu">
+      <a href="#about" onclick="close_menu()" class="menus"><img src="./assets/imgs/perfilIcon.svg" draggable="false"></a>
+      <a href="#projects" onclick="close_menu()" class="menus"><img src="./assets/imgs/projetos.svg" draggable="false"></a>
+      <a href="#contacts" onclick="close_menu()" class="menus"><img src="./assets/imgs/contatos.svg" draggable="false"></a>
+    </div>
+    <img class="img" onclick="menu()" id="img-btn" src="./assets/imgs/menu.png" draggable="false">
   </div>
 
   <!-- ///////////////////////////////// HOME /////////////////////////////////// -->
@@ -23,7 +29,7 @@
       </h1>
       <img src="./assets/imgs/MERECE!.png">
       <p class="size-normal">SUAS IDEIAS EXECUTADAS COM <label class="label-bg">PROFISSIONALISMO</label>, <label
-          class="label-bg">EXCÊLENCIA</label> E, PRINCIPALMENTE, DA FORMA CUJA
+          class="label-bg">EXCÊLENCIA</label> E, PRINCIPALMENTE, DA FORMA QUE
         ELAS <label class="label-bg">MERECEM!</label> O QUE MAIS VOCÊ PODERIA
         PEDIR?</p>
       <a href="#about" class="button-home">SAIBA MAIS <div><img src="./assets/imgs/seta-down.svg"></div></a>
@@ -210,12 +216,14 @@
             <label class="label-bg">SIMPLES</label> DE RESOLVER!</label>
           </p>
           <ul>
-            <li class="size-normal-g"><a href=""><img src="./assets/imgs/instagram.svg"></a>SAMUCA<label
+            <li class="size-normal-g"><a href="https://www.instagram.com/samucadesigns/"><img src="./assets/imgs/instagram.svg"></a>SAMUCA<label
                 class="label-bg">DESIGNS</label></li>
-            <li class="size-normal-g"><a href=""><img src="./assets/imgs/email.svg"></a><label
+            <li class="size-normal-g"><a href="mailto:samvieira.svf@gmail.com"><img src="./assets/imgs/email.svg"></a><label
                 class="label-bg">SAMVIEIRA</label>.SVF@GMAIL.COM</li>
-            <li class="size-normal-g"><a href=""><img src="./assets/imgs/linkedin.svg"></a>SAMUCA V. <label
+            <li class="size-normal-g"><a href="https://www.linkedin.com/in/samuel-v-ferreira-251573244/"><img src="./assets/imgs/linkedin.svg"></a>SAMUCA V. <label
                 class="label-bg"> FERREIRA</label></li>
+            <li class="size-normal-g"><a href="https://www.behance.net/samuelvieira20"><img src="./assets/imgs/behance.svg"></a>SAMUEL<label
+              class="label-bg">VIEIRA</label>20</li>
           </ul>
         </div>
 
@@ -236,7 +244,7 @@
             <h1 class="size-G">PREENCHA SEUS DADOS</h1>
             <div class="espaco"></div>
           </div>
-          <form action="https://formsubmit.co/murilloaugustoe081@gmail.com" method="POST" class="form">
+          <form action="https://formsubmit.co/samvieira.svf@gmail.com" method="POST" class="form">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contacts">
             <input type="hidden" name="_autoresponse" value="your custom message">
             <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
@@ -251,7 +259,7 @@
 
       <div class="footer">
         <a class="button-contacts" id="contato">FAZER PEDIDO <div><img src="./assets/imgs/lapis.svg"></div></a>
-        <img src="./assets/imgs/logo.svg" alt="">
+        <img class="logo" src="./assets/imgs/logo.svg" alt="">
       </div>
     </div>
   </section>

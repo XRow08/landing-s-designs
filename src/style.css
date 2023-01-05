@@ -159,35 +159,51 @@ li {
   border: 3px solid #06f421;
 }
 
-.button-home img:hover path {
+.button-home img:hover {
   fill: #06f421;
 }
 
 .menu-btn {
   position: fixed;
-  height: 5rem;
-  width: 5rem;
+  width: 1rem;
   right: 10rem;
   top: 5rem;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 6px;
-  font-size: 30px;
   z-index: 9999;
   cursor: pointer;
-  pointer-events: none;
-  rotate: 90deg;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.menu-btn:hover {
-  scale: 1.5;
-  transition: all 0.3s ease-in-out;
+.active {
+  width: 25rem;
 }
 
-.menu-btn img {
-  width: 100%;
-  height: 100%;
+.menu-btn .img {
+  width: 5rem;
+  height: 5rem;
   object-fit: cover;
+  rotate: 45deg;
+  background: none;
+}
+
+.menu-btn .active {
+  rotate: 90deg;
+  width: 5rem;
+  margin-left: 2rem;
+}
+
+.menu-btn .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  height: 5rem;
+  z-index: 9998;
+  overflow: hidden;
+  cursor: auto;
 }
 
 /* <!-- ///////////////////////////////// ABOUT /////////////////////////////////// --> */
@@ -422,11 +438,11 @@ li {
 .contacts-info .content .content-left ul li {
   display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .contacts-info .content .content-left ul li img {
   margin-right: 1rem;
+  margin-top: 4px;
 }
 
 .contacts-info .content .content-right {
@@ -460,6 +476,19 @@ li {
   align-items: center;
 }
 
+.footer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer a img {
+  height: 1.5rem;
+}
+
+.footer .logo {
+  height: 5rem;
+}
+
 .button-contacts {
   display: flex;
   align-items: center;
@@ -488,6 +517,9 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 .dialog {
   display: none;
@@ -502,6 +534,20 @@ li {
   text-align: center;
   padding: 3rem 9rem 11rem 9rem;
   z-index: 9999;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+	animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+@keyframes scale-in {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .dialog .header {
