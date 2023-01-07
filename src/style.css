@@ -1,14 +1,14 @@
 @font-face {
   font-family: integralCF;
-  src: url("../assets/fonts/IntegralCF-Bold.otf");
+  src: url('../assets/fonts/IntegralCF-Bold.otf');
 }
 @font-face {
   font-family: integralCF-regular;
-  src: url("../assets/fonts/IntegralCF-Regular.otf");
+  src: url('../assets/fonts/IntegralCF-Regular.otf');
 }
 @font-face {
   font-family: integralCF-bold;
-  src: url("../assets/fonts/IntegralCF-ExtraBold.otf");
+  src: url('../assets/fonts/IntegralCF-ExtraBold.otf');
 }
 
 * {
@@ -114,14 +114,12 @@ li {
 }
 
 #projects {
-  width: 100vw;
   background-image: url(../assets/imgs/FUNDO\ PROJETOS.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #contacts {
-  width: 100vw;
   background-image: url(../assets/imgs/fundo\ contatos.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +131,7 @@ li {
   justify-content: flex-start;
   width: 45%;
   gap: 2rem;
-  
+
   padding: 5rem 10rem 5rem 10rem;
 }
 
@@ -379,12 +377,52 @@ li {
   border-radius: 50%;
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 18%;
+  left: 55%;
+  z-index: 99999;
+  transition: all 0.5s ease-in-out;
+  -webkit-animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.main button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #06f421;
+  background-color: #06f421;
+  color: #000;
+  border-radius: 10px;
+  font-size: 24px;
+  width: 17rem;
+  height: 3.3rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-family: integralCF-bold;
+  padding-bottom: 0.3rem;
+}
+
+.main img {
+  width: 50rem;
+  height: 50rem;
+  object-fit: cover;
+  background: none;
+  border-radius: 30px;
+  border-radius: 30px;
+}
+
 .owl-carousel {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   margin-top: 5rem;
+  border-radius: 30px;
 }
 
 .owl-carousel .card {
@@ -401,7 +439,6 @@ li {
   width: 100%;
   object-fit: cover;
   border-radius: 30px;
-
 }
 
 /* <!-- //////////////////////////////// CONTACTS ////////////////////////////////// --> */

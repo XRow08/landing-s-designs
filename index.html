@@ -13,9 +13,12 @@
 <body>
   <div class="menu-btn" id="menu-btn" draggable="false">
     <div class="menu">
-      <a href="#about" onclick="close_menu()" class="menus"><img src="./assets/imgs/perfilIcon.svg" draggable="false"></a>
-      <a href="#projects" onclick="close_menu()" class="menus"><img src="./assets/imgs/projetos.svg" draggable="false"></a>
-      <a href="#contacts" onclick="close_menu()" class="menus"><img src="./assets/imgs/contatos.svg" draggable="false"></a>
+      <a href="#about" class="menus"><img src="./assets/imgs/perfilIcon.svg"
+          draggable="false"></a>
+      <a href="#projects" class="menus"><img src="./assets/imgs/projetos.svg"
+          draggable="false"></a>
+      <a href="#contacts" class="menus"><img src="./assets/imgs/contatos.svg"
+          draggable="false"></a>
     </div>
     <img class="img" onclick="menu()" id="img-btn" src="./assets/imgs/menu.png" draggable="false">
   </div>
@@ -33,10 +36,11 @@
         ELAS <label class="label-bg">MERECEM!</label> O QUE MAIS VOCÊ PODERIA
         PEDIR?</p>
       <a href="#about" class="button-home">SAIBA MAIS <div>
-        <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#000" d="M11.0591 16.5192C10.6732 17.1807 9.71741 17.1807 9.33153 16.5192L0.57257 1.50387C0.183687 0.837212 0.66456 -1.75114e-06 1.43635 -1.68367e-06L18.9543 -1.52206e-07C19.7261 -8.47342e-08 20.2069 0.837215 19.8181 1.50387L11.0591 16.5192Z"/>
-        </svg>
-      </div></a>
+          <svg width="20" height="18" viewBox="0 0 20 18" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#000"
+              d="M11.0591 16.5192C10.6732 17.1807 9.71741 17.1807 9.33153 16.5192L0.57257 1.50387C0.183687 0.837212 0.66456 -1.75114e-06 1.43635 -1.68367e-06L18.9543 -1.52206e-07C19.7261 -8.47342e-08 20.2069 0.837215 19.8181 1.50387L11.0591 16.5192Z" />
+          </svg>
+        </div></a>
     </div>
   </section>
 
@@ -167,39 +171,44 @@
       </h1>
     </div>
 
+    <div class="main" id="main_main">
+      <button id="fechar">Fechar</button>
+      <img src="./assets/portfolio/cenario.png" id="main" alt="IMAGE" draggable="false">
+    </div>
+
     <div class="carousel owl-carousel ">
       <div class="card">
-        <img src="./assets/portfolio/cenario.png" draggable="false">
+        <img src="./assets/portfolio/cenario.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/clickModas.jpg" draggable="false">
+        <img src="./assets/portfolio/clickModas.jpg" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/dragao.png " draggable="false">
+        <img src="./assets/portfolio/dragao.png " onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/dressa.png" draggable="false">
+        <img src="./assets/portfolio/dressa.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/santaFome.png" draggable="false">
+        <img src="./assets/portfolio/santaFome.png" onclick="change(this.src)" draggable="false">
       </div>
     </div>
 
     <div class="carousel owl-carousel ">
       <div class="card">
-        <img src="./assets/portfolio/garageBurguer.png" draggable="false">
+        <img src="./assets/portfolio/garageBurguer.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/lopes.png" draggable="false">
+        <img src="./assets/portfolio/lopes.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/MiracaTour.png" draggable="false">
+        <img src="./assets/portfolio/MiracaTour.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/perso1.png" draggable="false">
+        <img src="./assets/portfolio/perso1.png" onclick="change(this.src)" draggable="false">
       </div>
       <div class="card">
-        <img src="./assets/portfolio/xr.png" draggable="false">
+        <img src="./assets/portfolio/xr.png" onclick="change(this.src)" draggable="false">
       </div>
     </div>
 
@@ -220,14 +229,14 @@
             <label class="label-bg">SIMPLES</label> DE RESOLVER!</label>
           </p>
           <ul>
-            <li class="size-normal-g"><a href="https://www.instagram.com/samucadesigns/"><img src="./assets/imgs/instagram.svg"></a>SAMUCA<label
-                class="label-bg">DESIGNS</label></li>
-            <li class="size-normal-g"><a href="mailto:samvieira.svf@gmail.com"><img src="./assets/imgs/email.svg"></a><label
-                class="label-bg">SAMVIEIRA</label>.SVF@GMAIL.COM</li>
-            <li class="size-normal-g"><a href="https://www.linkedin.com/in/samuel-v-ferreira-251573244/"><img src="./assets/imgs/linkedin.svg"></a>SAMUCA V. <label
-                class="label-bg"> FERREIRA</label></li>
-            <li class="size-normal-g"><a href="https://www.behance.net/samuelvieira20"><img src="./assets/imgs/behance.svg"></a>SAMUEL<label
-              class="label-bg">VIEIRA</label>20</li>
+            <li class="size-normal-g"><a href="https://www.instagram.com/samucadesigns/"><img
+                  src="./assets/imgs/instagram.svg"></a>SAMUCA<label class="label-bg">DESIGNS</label></li>
+            <li class="size-normal-g"><a href="mailto:samvieira.svf@gmail.com"><img
+                  src="./assets/imgs/email.svg"></a><label class="label-bg">SAMVIEIRA</label>.SVF@GMAIL.COM</li>
+            <li class="size-normal-g"><a href="https://www.linkedin.com/in/samuel-v-ferreira-251573244/"><img
+                  src="./assets/imgs/linkedin.svg"></a>SAMUCA V. <label class="label-bg"> FERREIRA</label></li>
+            <li class="size-normal-g"><a href="https://www.behance.net/samuelvieira20"><img
+                  src="./assets/imgs/behance.svg"></a>SAMUEL<label class="label-bg">VIEIRA</label>20</li>
           </ul>
         </div>
 
@@ -258,15 +267,16 @@
             <textarea placeholder="DETALHE SEU PEDIDO..." name="mensagem"></textarea>
             <button type="submit" id="enviar">ENVIAR<div><img src="./assets/imgs/enviar.svg"></div></button>
           </form>
-        </div>  
+        </div>
       </div>
 
       <div class="footer">
         <a class="button-contacts" id="contato">FAZER PEDIDO <div>
-          <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-            <path fill="black" d="M0.476074 18.6902V15.2902H17.4761V18.6902H0.476074ZM2.17607 13.5902V10.4027L9.86858 2.71019L13.0561 5.89769L5.36357 13.5902H2.17607ZM14.0123 4.96269L10.8248 1.77519L12.3548 0.245192C12.5107 0.0751922 12.709 -0.00640769 12.9498 0.000392308C13.1907 0.00775897 13.389 0.0893589 13.5448 0.245192L15.5423 2.24269C15.6982 2.39853 15.7761 2.59346 15.7761 2.82749C15.7761 3.06096 15.6982 3.26269 15.5423 3.43269L14.0123 4.96269Z"/>
-          </svg>            
-        </div></a>
+            <svg width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+              <path fill="black"
+                d="M0.476074 18.6902V15.2902H17.4761V18.6902H0.476074ZM2.17607 13.5902V10.4027L9.86858 2.71019L13.0561 5.89769L5.36357 13.5902H2.17607ZM14.0123 4.96269L10.8248 1.77519L12.3548 0.245192C12.5107 0.0751922 12.709 -0.00640769 12.9498 0.000392308C13.1907 0.00775897 13.389 0.0893589 13.5448 0.245192L15.5423 2.24269C15.6982 2.39853 15.7761 2.59346 15.7761 2.82749C15.7761 3.06096 15.6982 3.26269 15.5423 3.43269L14.0123 4.96269Z" />
+            </svg>
+          </div></a>
         <img class="logo" src="./assets/imgs/logo.svg" alt="">
       </div>
     </div>
