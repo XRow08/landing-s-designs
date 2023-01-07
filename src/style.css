@@ -114,12 +114,14 @@ li {
 }
 
 #projects {
+  width: 100vw;
   background-image: url(../assets/imgs/FUNDO\ PROJETOS.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #contacts {
+  width: 100vw;
   background-image: url(../assets/imgs/fundo\ contatos.svg);
   background-repeat: no-repeat;
   background-size: cover;
