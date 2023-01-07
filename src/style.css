@@ -23,12 +23,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-image: url(../assets/imgs/backGround.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 h1,
 h2,
 h3,
@@ -45,55 +39,55 @@ li {
 }
 
 .size-GG {
-  font-size: 104px;
+  font-size: 102px;
   line-height: 128px;
   letter-spacing: 0.2em;
 }
 
 .size-G {
-  font-size: 52px;
+  font-size: 50px;
   line-height: 64px;
   letter-spacing: 0.05em;
 }
 
 .size-G-medio {
-  font-size: 46px;
+  font-size: 44px;
   letter-spacing: 0.05em;
 }
 
 .size-GG-grande {
-  font-size: 100px;
+  font-size: 98px;
   letter-spacing: 0.1em;
 }
 
 .size-normal-pp {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 30px;
   letter-spacing: 0.05em;
 }
 
 .size-normal-p {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .size-normal {
   font-family: integralCF-regular;
-  font-size: 22px;
+  font-size: 20px;
   letter-spacing: 0.05em;
   text-align: left;
 }
 
 .size-normal-g {
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .size-normal-gg {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 0.08em;
 }
 
 .size-normal-ggg {
-  font-size: 32px;
+  font-size: 30;
   letter-spacing: 0.05em;
 }
 
@@ -106,20 +100,30 @@ li {
 }
 
 #home {
-  margin: 5rem 10rem 10rem 10rem;
   height: 100vh;
+  background-image: url(../assets/imgs/fundo\ home.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #about {
-  margin: 0 10rem 10rem 10rem;
-}
-#contacts {
-  margin: 0 10rem 6rem 10rem;
-  
+  background-image: url(../assets/imgs/FUNDO\ PERFIL.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#projects{
-  margin-bottom: 10rem;
+#projects {
+  width: 100vw;
+  background-image: url(../assets/imgs/FUNDO\ PROJETOS.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contacts {
+  width: 100vw;
+  background-image: url(../assets/imgs/fundo\ contatos.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-info {
@@ -128,6 +132,8 @@ li {
   justify-content: flex-start;
   width: 45%;
   gap: 2rem;
+  
+  padding: 5rem 10rem 5rem 10rem;
 }
 
 .home-info .logo {
@@ -159,7 +165,7 @@ li {
   border: 3px solid #06f421;
 }
 
-.button-home img:hover {
+.button-home:hover svg path {
   fill: #06f421;
 }
 
@@ -216,9 +222,7 @@ li {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-top: -10rem;
-  margin-bottom: 10rem;
+  padding: 5rem 10rem 10rem 10rem;
 }
 
 .profile-right {
@@ -279,8 +283,13 @@ li {
 
 .profile-left .img-perfil {
   display: flex;
-  width: 35rem;
-  height: 5rem;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #fff;
+  background: radial-gradient(#009611, #000);
+  background-size: 400% 400%;
+  animation: colors 15s ease infinite;
   margin-bottom: 3rem;
 }
 
@@ -318,9 +327,7 @@ li {
 .projects-info {
   display: flex;
   flex-direction: column;
-  margin-top: 25rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding: 5rem 10rem 10rem 10rem;
 }
 
 .projects-info .meus {
@@ -380,9 +387,9 @@ li {
 }
 
 .owl-carousel .card {
-  height: 25rem;
-  width: 25rem;
-  background: rgba(0, 0, 0, .2);
+  height: 20rem;
+  width: 20rem;
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
   border-radius: 30px;
   margin: 0;
@@ -397,7 +404,6 @@ li {
 
 /* <!-- //////////////////////////////// CONTACTS ////////////////////////////////// --> */
 .contacts-info .meus {
-  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -409,11 +415,16 @@ li {
   background-color: #fff;
   width: 15%;
   height: 1rem;
+  margin-top: 1rem;
   border-radius: 0 0 30px 0;
   margin-bottom: 0;
 }
 
-.contacts-info .content  {
+.contacts-info {
+  padding: 0 10rem 6rem 10rem;
+}
+
+.contacts-info .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -454,7 +465,7 @@ li {
 
 .contacts-info .content .content-right .espaco {
   background-color: #06f421;
-  width:100%;
+  width: 100%;
   height: 0.4rem;
   border-radius: 0 0 30px 0;
   margin-bottom: 0;
@@ -462,7 +473,7 @@ li {
 
 .contacts-info .espaco {
   background-color: #06f421;
-  width:100%;
+  width: 100%;
   height: 0.4rem;
   border-radius: 0 0 30px 0;
   margin-bottom: 5rem;
@@ -510,6 +521,11 @@ li {
   color: #06f421;
   border: 3px solid #06f421;
 }
+
+.button-contacts:hover svg path {
+  fill: #06f421;
+}
+
 .content-dialog {
   width: 100%;
   display: flex;
@@ -517,8 +533,8 @@ li {
   justify-content: center;
   align-items: center;
   transition: all 0.5s ease-in-out;
-  -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -webkit-animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .dialog {
   display: none;
@@ -534,8 +550,8 @@ li {
   padding: 3rem 9rem 11rem 9rem;
   z-index: 9999;
   transition: all 0.5s ease-in-out;
-  -webkit-animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-	animation: scale-in 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+  -webkit-animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 @keyframes scale-in {
@@ -572,7 +588,7 @@ li {
 
 .dialog input,
 .dialog textarea {
-  background: #06F421;
+  background: #06f421;
   border-radius: 10px;
   height: 2rem;
   padding: 1rem 0 1rem 1rem;
@@ -590,7 +606,7 @@ li {
 
 .dialog input::placeholder,
 .dialog textarea::placeholder {
-  color: rgb(0,0,0);
+  color: rgb(0, 0, 0);
   font-weight: 600;
   font-family: integralCF-bold;
 }
@@ -619,7 +635,6 @@ li {
   width: 1.5rem;
   height: 100%;
 }
-
 
 @keyframes colors {
   0% {
