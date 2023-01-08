@@ -383,7 +383,7 @@ li {
   flex-direction: column;
   position: fixed;
   top: 15%;
-  left: 40%;
+  left: 55%;
   z-index: 99999;
   transition: all 0.5s ease-in-out;
   -webkit-animation: scale-in 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
