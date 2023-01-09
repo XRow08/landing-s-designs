@@ -582,7 +582,7 @@ li {
   flex-direction: column;
   position: fixed;
   bottom: 6rem;
-  width: 42%;
+  width: 45%;
   background: rgba(217, 217, 217, 0.2);
   box-shadow: inset 2px 2px 2px rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(25px);
