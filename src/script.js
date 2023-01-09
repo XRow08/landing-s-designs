@@ -1,5 +1,6 @@
 const contato = document.getElementById('contato');
 const dialog = document.getElementById('dialog');
+const close2 = document.getElementById('fechar_model');
 const close = document.getElementById('enviar');
 const btn_menu = document.getElementById('menu-btn');
 const img_menu = document.getElementById('img-btn');
@@ -32,6 +33,10 @@ contato.addEventListener('click', () => {
 });
 
 close.addEventListener('click', () => {
+  dialog.style.display = 'none';
+});
+
+close2.addEventListener('click', () => {
   dialog.style.display = 'none';
 });
 
