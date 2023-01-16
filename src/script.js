@@ -1,4 +1,4 @@
-const contato = document.getElementById('contato');
+/* const contato = document.getElementById('contato'); */
 const dialog = document.getElementById('dialog');
 const close2 = document.getElementById('fechar_model');
 const close = document.getElementById('enviar');
@@ -28,9 +28,9 @@ fechar.addEventListener('click', () => {
   main_main.style.display = 'none';
 });
 
-contato.addEventListener('click', () => {
+/* contato.addEventListener('click', () => {
   dialog.style.display = 'flex';
-});
+}); */
 
 close.addEventListener('click', () => {
   dialog.style.display = 'none';
